@@ -1,12 +1,10 @@
 <?php
-
+/**
+ * 包安装时需要处理的脚本
+ */
 namespace SwaSky\ElasticSearch;
 
 use Composer\Script\Event;
-
-$packageDir = dirname(__DIR__); //当前包的根目录
-
-$vendorDir = dirname(dirname(dirname($packageDir))); //项目根目录
 
 class Scripts
 {
@@ -20,9 +18,9 @@ class Scripts
         // do stuff
     }
 
-    public static function warmCache(Event $event)
+    public static function install(Event $event)
     {
-        $composer = $event->getComposer();
-        // make cache toasty
+        //$composer = $event->getComposer();
+        // do stuff
     }
 }

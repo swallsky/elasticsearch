@@ -21,6 +21,7 @@
  
 ## 使用方法
   请查看本包tests中，测试程序，通过第三个参数直接调用测试方法
+  复制config/es.simple.php文件到项目根目录中，放入config文件夹中,修改相应的参数
   ```php
   php index.php add #添加索引
   php index.php del #删除索引
