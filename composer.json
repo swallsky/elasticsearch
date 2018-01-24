@@ -1,0 +1,24 @@
+{
+    "name": "swallsky/elasticsearch",
+    "authors": [
+        {
+            "name": "swallsky",
+            "email": "xjz1688@163.com"
+        }
+    ],
+    "require": {
+        "elasticsearch/elasticsearch": "^6.0",
+        "monolog/monolog": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "SwaSky\\ElasticSearch\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-update-cmd": "SwaSky\\ElasticSearch\\Scripts::postUpdate",
+        "post-install-cmd": [
+            "SwaSky\\ElasticSearch\\Scripts::warmCache"
+        ]
+    }
+}
